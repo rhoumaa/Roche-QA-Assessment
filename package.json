@@ -1,0 +1,44 @@
+{
+  "name": "roche-qa-assessment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "runtAllTest":"npx cypress run --spec cypress/e2e/BDD/*.feature --record --key b449bdcd-2075-42a1-a987-2c30a666153b"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress": "^13.10.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@cypress/browserify-preprocessor": "latest"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber",
+      "json": {
+        "enabled": true,
+        "output": "cypress/cucumber-json/cucumber-json.json",
+        "formatter": "cucumber-json-formatter"
+      },
+      "messages": {
+        "enabled": true,
+        "output": "cypress/messages.ndjson"
+      },
+  "nonGlobalStepDefinitions": true,
+  "stepDefinitions":
+    "cypress/support/step_definitions/**/*{.js,.mjs}"
+    }
+  }
+}
