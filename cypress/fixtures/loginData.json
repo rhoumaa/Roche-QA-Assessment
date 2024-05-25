@@ -1,0 +1,9 @@
+{
+  "ValidUserName": "Valid user name",
+  "ValidPassword": "Valid password",
+  "InvalidUserName": "Invalid user name",
+  "InvalidPassword": "Invalid password",
+  "EmptyUserName": "",
+  "EmptyPassword": "",
+  "LoginSuccess":"sign in successful"
+}
